@@ -1,0 +1,111 @@
+main {
+  height: 70vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.1rem;
+}
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+.header {
+  background-color: #3b5998;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+
+  margin-bottom: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000000;
+}
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+.sent .username {
+  font-size: 12px;
+  color: white;
+  text-align: right;
+}
+.received .username {
+  font-size: 12px;
+}
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+.new-message-form {
+  display: flex;
+  width: 100%;
+}
+#filled-basic {
+  color: white !important;
+}
+
+.new-message-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: rgb(255, 255, 255) !important;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
+.send-button {
+  border: none;
+  outline: none;
+  background: #3b5998;
+  width: 10%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.dropdown {
+  text-align: right;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
