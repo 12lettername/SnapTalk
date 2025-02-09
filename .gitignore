@@ -8,7 +8,7 @@ src/firebase.js
 /.firebaserc
 /firebase.json
 /package-lock.json
-
+/Images
 
 # testing
 /coverage
